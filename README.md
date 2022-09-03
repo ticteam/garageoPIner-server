@@ -10,9 +10,9 @@ but if you wanna mount the file to the docker,
 you need to uncomment line 11 in the docker-compose.yaml
 
 
-- to build the docker container image
-$> docker build -t garagepi:ubuntu18.04
+- to build the docker container image  
+$> docker build -t garagepi:ubuntu18.04 .
 
-- to run it 
+- to run it  
 $> docker-compose up -d 
 
