@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  garage-pi:
+    container_name: garage-pi
+    image: garagepi:ubuntu18.04
+    ports:
+      - "8055:8055"
+    privileged: true
+    restart: unless-stopped
+    volumes:
+    #  - /path/to/folder/garageoPIner-server:/garageoPIner-server
+      - /dev/mem:/dev/mem
